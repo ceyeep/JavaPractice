@@ -2,11 +2,7 @@ package com.yeep.test;
 
 import org.junit.Test;
 import com.yeep.Problems;
-import com.yeep.Node;
-
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -51,7 +47,7 @@ public class ProblemsTest {
         Integer[] formattedValues = {3, 5, 6, 1, 2};
         LinkedList<Integer> originalList = new LinkedList<>();
         for(int value : originalValues)
-            originalList.add(new Integer(value));
+            originalList.add(value);
         assertArrayEquals(formattedValues,Problems.lab_2_1(originalList).toArray());
     }
 
@@ -60,7 +56,7 @@ public class ProblemsTest {
         Integer[] originalValues = {3, 5, 6, 5, 1, 2, 3};
         LinkedList<Integer> originalList = new LinkedList<>();
         for(int value : originalValues)
-            originalList.add(new Integer(value));
+            originalList.add(value);
         assertEquals(1,Problems.lab_2_2(originalList,3));
     }
 
@@ -69,7 +65,7 @@ public class ProblemsTest {
         Integer[] originalValues = {3, 5, 6, 5, 1, 2, 3};
         LinkedList<Integer> originalList = new LinkedList<>();
         for(int value : originalValues)
-            originalList.add(new Integer(value));
+            originalList.add(value);
         assertEquals(1,Problems.lab_2_2(originalList,10));
     }
 }
